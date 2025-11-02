@@ -1,48 +1,226 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QUẢN LÝ MÁY TÍNH</title>
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="/css/managecomputer.css">
-</head>
-<body>
-      <aside class="sidebar">
-        <div class="sidebar-header">
-            <img src="/img/logo.png" alt="logo">
-            <h2>CyberGame</h2>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/managecomputer.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <img src="/img/logo.png" alt="logo" />
+        <h2>CyberGame</h2>
+      </div>
+      <ul class="sidebar-links">
+        <li>
+          <a href="managecomputer.html"
+            ><i class="fa-solid fa-desktop"></i>QUẢN LÝ MÁY TÍNH</a
+          >
+        </li>
+        <li>
+          <a href="manageaccount.html"
+            ><i class="fa-solid fa-user"></i>QUẢN LÝ TÀI KHOẢN</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fa-solid fa-money-bill-wave"></i>QUẢN LÝ GIAO DỊCH</a
+          >
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-utensils"></i>QUẢN LÝ DỊCH VỤ</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-chart-column"></i>THỐNG KÊ</a>
+        </li>
+        <li>
+          <a href="#" id="logout"
+            ><i class="fa-solid fa-right-from-bracket"></i> ĐĂNG XUẤT</a
+          >
+        </li>
+      </ul>
+      <div class="user-account">
+        <div class="user-profile">
+          <img src="/img/iconaccount.png" alt="" />
+          <div class="user-detail">
+            <h3>Tên tài khoản</h3>
+            <span>Nhân viên</span>
+          </div>
         </div>
-        <ul class="sidebar-links">
-            <li>
-                <a href="managecomputer.html"><i class="fa-solid fa-desktop"></i>QUẢN LÝ MÁY TÍNH</a
-            </li>
-            <li>
-                <a href="manageaccount.html"><i class="fa-solid fa-user"></i>QUẢN LÝ TÀI KHOẢN</a>
-            </li>
-            <li>
-                <a href="#"><i class="fa-solid fa-money-bill-wave"></i>QUẢN LÝ GIAO DỊCH</a>
-            </li>
-            <li>
-                <a href="#"><i class="fa-solid fa-utensils"></i>QUẢN LÝ DỊCH VỤ</a>
-            </li>
-            <li>
-                <a href="#"><i class="fa-solid fa-chart-column"></i>THỐNG KÊ</a>
-            </li>
-            <li>
-                <a href="#" id="logout"><i class="fa-solid fa-right-from-bracket"></i> ĐĂNG XUẤT</a>
-            </li>
-        </ul>
-        <div class="user-account">
-            <div class="user-profile">
-                <img src="/img/iconaccount.png" alt="">
-                <div class="user-detail">
-                    <h3>Tên tài khoản</h3>
-                    <span>Nhân viên</span>
-                </div>
-            </div>
-        </div>
+      </div>
     </aside>
+    <main class="main-content">
+      <div class="top-bar">
+        <button id="btnThemMay" class="btn-them">
+          <i class="fa-solid fa-plus"></i> Thêm máy tính
+        </button>
+      </div>
+
+      <section class="may-tinh-container">
+        <div class="may-tinh">
+          <h3>Máy tính 01</h3>
+          <p class="trong">Máy trống</p>
+          <div class="actions">
+            <button class="btn-edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="btn-del"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+        <div class="may-tinh">
+          <h3>Máy tính 02</h3>
+          <p class="trong">Máy trống</p>
+          <div class="actions">
+            <button class="btn-edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="btn-del"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+        <div class="may-tinh">
+          <h3>Máy tính 03</h3>
+          <p class="trong">Máy trống</p>
+          <div class="actions">
+            <button class="btn-edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="btn-del"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+        <div class="may-tinh">
+          <h3>Máy tính 04</h3>
+          <p class="trong">Máy trống</p>
+          <div class="actions">
+            <button class="btn-edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="btn-del"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+        <div class="may-tinh">
+          <h3>Máy tính 05</h3>
+          <p class="trong">Máy trống</p>
+          <div class="actions">
+            <button class="btn-edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="btn-del"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+        <div class="may-tinh">
+          <h3>Máy tính 06</h3>
+          <p class="trong">Máy trống</p>
+          <div class="actions">
+            <button class="btn-edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="btn-del"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+        <div class="may-tinh">
+          <h3>Máy tính 07</h3>
+          <p class="trong">Máy trống</p>
+          <div class="actions">
+            <button class="btn-edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="btn-del"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+        <div class="may-tinh">
+          <h3>Máy tính 08</h3>
+          <p class="trong">Máy trống</p>
+          <div class="actions">
+            <button class="btn-edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="btn-del"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+        <div class="may-tinh">
+          <h3>Máy tính 09</h3>
+          <p class="trong">Máy trống</p>
+          <div class="actions">
+            <button class="btn-edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="btn-del"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+        <div class="may-tinh">
+          <h3>Máy tính 10</h3>
+          <p class="trong">Máy trống</p>
+          <div class="actions">
+            <button class="btn-edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="btn-del"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+        <div class="may-tinh">
+          <h3>Máy tính 11</h3>
+          <p class="trong">Máy trống</p>
+          <div class="actions">
+            <button class="btn-edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="btn-del"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+        <div class="may-tinh">
+          <h3>Máy tính 12</h3>
+          <p class="trong">Máy trống</p>
+          <div class="actions">
+            <button class="btn-edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="btn-del"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+        <div class="may-tinh">
+          <h3>Máy tính 13</h3>
+          <p class="trong">Máy trống</p>
+          <div class="actions">
+            <button class="btn-edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="btn-del"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+        <div class="may-tinh">
+          <h3>Máy tính 14</h3>
+          <p class="trong">Máy trống</p>
+          <div class="actions">
+            <button class="btn-edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="btn-del"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+        <div class="may-tinh">
+          <h3>Máy tính 15</h3>
+          <p class="trong">Máy trống</p>
+          <div class="actions">
+            <button class="btn-edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="btn-del"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+        <div class="may-tinh">
+          <h3>Máy tính 16</h3>
+          <p class="trong">Máy trống</p>
+          <div class="actions">
+            <button class="btn-edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="btn-del"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+        <div class="may-tinh">
+          <h3>Máy tính 17</h3>
+          <p class="trong">Máy trống</p>
+          <div class="actions">
+            <button class="btn-edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="btn-del"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal thêm/sửa máy -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3 id="modal-title">Thêm máy tính mới</h3>
+        <label for="tenMay">Tên máy:</label>
+        <input type="text" id="tenMay" />
+        <label for="trangThai">Trạng thái:</label>
+        <select id="trangThai">
+          <option value="trong">Máy trống</option>
+          <option value="su-dung">Đang sử dụng</option>
+          <option value="hong">Máy hỏng</option>
+        </select>
+        <div class="btn-group">
+          <button id="luu" class="btn-save">Lưu</button>
+          <button id="dong" class="btn-cancel">Đóng</button>
+        </div>
+      </div>
+    </div>
+    <script src="/js/managecomputer.js"></script>
     <script src="/js/auth.js"></script>
-</body>
+  </body>
 </html>
